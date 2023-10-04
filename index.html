@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script type="text/javascript" src="scripts.js"></script>
+    </head>
+    <body>
+        <button onclick="mostrarMensaje()">Mostrar</button><br>
+        <a href="javascript:msj()">Mensaje</a><br>
+        <a href="javascript:window.print()">Imprimir</a><br>
+        <a href="javascript:window.location.reload()">Refrescar</a><br>
+        <button onclick="ejemplo1()">Saludo</button><br>
+        <button onclick="ejemplo2()">Saludo personalizado</button><br>
+        <button onclick="ejemplo3()">Suma de numeros</button><br> 
+        <button onclick="ejemplo4()">Mostar Imagen</button><br>
+        <button onclick="ejemplo5()">Visitar pagina UTP</button><br>   
+        <form>
+            <label>Ingrese nombre: </label>
+            <input type="text" name="nom" id="nombre">
+            <input type="button" onclick="ejemplo6()" name="aceptar" value="Aceptar">
+        </form>  
+        <form2>
+            <label>Habitualmente como se desplaza usted? </label><br>
+            <input type="radio" name="resp" value="Caminando">Caminando<br>
+            <input type="radio" name="resp" value="Bicicleta">Bicicleta<br>
+            <input type="radio" name="resp" value="Auto">Auto<br>
+            <input type="radio" name="resp" value="Microbus">Microbus<br>
+            <input type="radio" name="resp" value="Taxi">Taxi<br>
+            <input type="button" onclick="ejemplo7()" name="aceptar" value="Aceptar">
+        </form2>  
+        <form name="producto">
+            <label>Numero1</label>
+            <input type="text" name="nro1"><br>
+            <label>Numero2</label><br>
+            <input type="text" name="nro2"><br>
+            <label>Producto</label>
+            <input type="text" name="resultado"><br>
+            <input type="button" onclick="ejemplo8()" name="aceptar" value="Aceptar">
+        </form>
+        <h1>EJERCICIO 1</h1>
+        <form3>
+            <label for="edad">Edad del cliente:</label>
+            <label for="monto">Monto total:</label>
+            <input type="number" id="monto" placeholder="Ingrese el monto total">
+            <input type="number" id="edad" placeholder="Ingrese su edad">
+            <button onclick="ejercicio1()">Calcular Descuento</button>
+            <label for="pagoFinal">Pago final:</label>
+            <p id="pagoFinal">$0.00</p>
+        </form3>
+        <form4>
+            <h1>EJERCICIO 2</h1>
+            <label for="nota1">Nota 1:</label>
+            <input type="number" id="nota1" placeholder="Ingrese la nota 1" max="20" min="0"><br>        
+            <label for="nota2">Nota 2:</label>
+            <input type="number" id="nota2" placeholder="Ingrese la nota 2" max="20" min="0"><br>       
+            <label for="nota3">Nota 3:</label>
+            <input type="number" id="nota3" placeholder="Ingrese la nota 3" max="20" min="0"><br>        
+            <button onclick="ejercicio2()">Calcular Promedio</button><br>       
+            <p id="promedioFinal">Promedio Final</p>
+            <p id="resultado">Aprobación:</p>     
+        </form4>
+        <form5>
+            <h1>EJERCICIO 3</h1>
+            <label for="numero">Ingrese un número:</label>
+            <input type="number" id="numero" placeholder="Ingrese un número">
+            <button onclick="ejercicio3()">Ingresar</button><br>        
+            <p>Cantidad de números positivos: <label id="positivos">0</label></p>
+            <p>Cantidad de números negativos: <label id="negativos">0</label></p>
+        </form5>
+        <form6>
+            <h1>EJERCICIO 4</h1> 
+            <p>Ingrese los datos de los pacientes:</p> 
+            <label for="peso">Peso (en kilos):</label>
+            <input type="number" id="peso" placeholder="Ingrese el peso"><br>
+            <label for="talla">Talla (en metros):</label>
+            <input type="number" id="talla" placeholder="Ingrese la talla"><br>      
+            <label for="genero">Género:</label>      
+
+            <select id="genero">
+                <option value="niño">Niño</option>
+                <option value="niña">Niña</option>
+            </select><br>
+
+            <button onclick="ejercicio4()">Registrar Paciente</button><br>
+            
+            <p>Cantidad de niños que pesan más de 17 kilos: <span id="cantidadNiñosPesados">0</span></p>
+            <p>Cantidad de niñas que miden menos de 0.50 metros: <span id="cantidadNiñasBajas">0</span></p>
+            <p>Peso promedio de las niñas: <span id="pesoPromedioNiñas">0</span> kilos</p>
+            <p>Talla promedio de los niños: <span id="tallaPromedioNiños">0</span> metros</p>
+        </form6>
+    </body>
+</html>
